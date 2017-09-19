@@ -62,3 +62,7 @@ case there were problems with plugin initialization.
 
 If everything is fine, next step might be to load only clang_complete plugin
 and see if anything changes.
+=======
+# dotfiles
+
+Based on the guide [here](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
