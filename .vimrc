@@ -20,6 +20,9 @@ Plug 'sjl/gundo.vim'
 " Fugitive
 Plug 'tpope/vim-fugitive'
 
+" YouCompleteMe
+Plug 'Valloric/YouCompleteMe'
+
 " Initialize plugin system
 call plug#end()
 
@@ -34,7 +37,6 @@ syntax enable           " enable syntax processing
 set tabstop=4           " number of visual spaces per TAB
 set softtabstop=4       " number of spaces in tab when editing
 set expandtab           " tabs are spaces
-
 
 " --------------- UI Config ---------------
 set number              " show line numbers
@@ -108,7 +110,6 @@ augroup configgroup
     autocmd VimEnter * highlight clear SignColumn
     autocmd BufWritePre *.py,*.js,*.txt,*.java,*.md,*.cc,*.cpp,*.h,*.hpp 
         \ :call <SID>StripTrailingWhitespaces()
-    autocmd FileType java setlocal noexpandtab
     autocmd FileType java setlocal list
     autocmd FileType java setlocal listchars=tab:+\ ,eol:-
     autocmd FileType java setlocal formatprg=par\ -w80\ -T4
